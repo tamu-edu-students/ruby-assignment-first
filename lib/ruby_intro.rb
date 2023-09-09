@@ -38,5 +38,7 @@ end
 
 # Object representing a book
 class BookInStock
-  # YOUR CODE HERE
+  def initialize(isbn, price)
+    raise ArgumentError.new("Illegal Argument") if isbn.empty? || price <= 0
+  end
 end
