@@ -30,7 +30,8 @@ def starts_with_consonant?(string)
 end
 
 def binary_multiple_of_4?(string)
-  # YOUR CODE HERE
+  return true if string == "0"
+	string =~ /^[10]*00$/ 
 end
 
 # Part 3
