@@ -7,7 +7,11 @@ def sum(arr)
 end
 
 def max_2_sum(arr)
-  # YOUR CODE HERE
+  return 0 if arr.empty?
+  return arr[0] if arr.length() == 1
+  # sorted the array and added the last 2 values of the same.
+  arr = arr.sort()
+  return arr[arr.length() -1] + arr[arr.length() -2]
 end
 
 def sum_to_n?(arr, number)
