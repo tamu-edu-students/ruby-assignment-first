@@ -46,4 +46,8 @@ class BookInStock
     @isbn = isbn
     @price = price
   end
+
+  def price_as_string
+    return sprintf("$" + "%.2f", price)
+  end
 end
